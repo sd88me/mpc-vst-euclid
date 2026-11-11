@@ -25,7 +25,7 @@ DELETE an old "sd88me - VST - Euclidier" folder from there, make sure Preference
 Then add "Euclid" to a track from External Plugins.
 
 Euclid plays through a MIDI output port named Euclid (Euclidier's was called Euclidier): set a drum or synth track's MIDI input to it.
-More: https://github.com/sd88me/mpc-vst-euclidier
+More: https://github.com/sd88me/mpc-vst-euclid
 """ % (VER, NAME),
 "armv7": """Euclid %s for Force and other 32-bit (armv7) MPCs
 
@@ -42,7 +42,7 @@ B) MPC OS that loads plugin folders from "VST2 Plugins": copy "VST2 Plugins/%s" 
 
 Then add "Euclid" to a track from the plugin browser.
 Euclid plays through a MIDI output port named Euclid (Euclidier's was called Euclidier): set a drum or synth track's MIDI input to it.
-More: https://github.com/sd88me/mpc-vst-euclidier
+More: https://github.com/sd88me/mpc-vst-euclid
 """ % (VER, NAME),
 }
 

@@ -5,7 +5,7 @@
 Euclid (formerly Euclidier) is an 8-lane Euclidean MIDI sequencer for Akai MPC OS standalone devices (Force, MPC Live / One / X / Key,
 Live III), with its own MPC screen skin and Q-Links. It makes no sound: it plays MIDI into other tracks, and follows the project
 transport and tempo, so edits stay in phase with the beat. The Euclidean sequencer at its base comes from
-[intelliriffer/EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar (see [credits](#credits-and-licence)).
+[intelliriffer/EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar.
 
 <img width="480" alt="Euclid, LANES tab" src="docs/img/euclid-lanes.png">
 <img width="480" alt="Euclid, ALL tab" src="docs/img/euclid-all.png">
@@ -111,7 +111,7 @@ a fake host, and checks every note against the song position through loops, temp
 
 - **Amit Talwar** ([intelliriffer](https://github.com/intelliriffer)) wrote the Euclidean sequencer this started from,
   [EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE): the Bjorklund pattern generator (used here unchanged), the lane
-  logic that `src/core` is a port of, and the chord progressions in `docs/progressions`.
+  logic that `src/core` is a port of.
 - Everything else is [sd88me](https://github.com/sd88me)'s: the plugin, the in-plugin timing core, the skin design, the ALL view, tap-to-draw
   steps and the other features, and the installers.
 

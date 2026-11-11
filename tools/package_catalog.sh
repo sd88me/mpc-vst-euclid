@@ -32,7 +32,7 @@ PY
   printf '<PLUGIN name="Euclid" descriptiveName="Euclid" format="VST" category="Synth" manufacturer="sd88me" version="%s" file="euclid.so" uid="45714472" isInstrument="1" fileTime="0" infoUpdateTime="0" numInputs="0" numOutputs="2" isShell="0"/>\n' "$VER" > "$st/entry.xml"
   python3 "$MPC_VST/tools/release.py" --so "$st/euclid.so" --skin "$st/$DIR" --entry "$st/entry.xml" --version "$VER" \
     --user-data euclidierBANK.bin --retire "sd88me - VST - Euclidier" \
-    --repo sd88me/mpc-vst-euclidier --license MIT --id euclidier \
+    --repo sd88me/mpc-vst-euclid --license MIT --id euclidier \
     --about "Eight-lane Euclidean MIDI sequencer (formerly Euclidier): circle and lane rows with a play-head, tap to draw steps, an ALL view, randomise, drum mode, and a native MPC skin with Q-Links." \
     -o "$st/dist"
   z=$(ls "$st/dist"/*.zip); cp "$z" "$out/Euclid-$VER-mpc-$cpu.zip"

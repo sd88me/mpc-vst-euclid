@@ -11,6 +11,6 @@
   "file64": "VST/euclid-arm64.so",
   "description": "An eight-lane Euclidean rhythm sequencer, played as MIDI into drum or synth tracks. Makes no sound itself.",
   "author": "sd88me",
-  "url": "https://github.com/sd88me/mpc-vst-euclidier",
+  "url": "https://github.com/sd88me/mpc-vst-euclid",
   "license": "MIT"
 }
