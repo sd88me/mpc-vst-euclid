@@ -4,7 +4,7 @@
 
 Euclid (formerly Euclidier) is an 8-lane Euclidean MIDI sequencer for Akai MPC OS standalone devices (Force, MPC Live / One / X / Key,
 Live III), with its own MPC screen skin and Q-Links. It makes no sound: it plays MIDI into other tracks, and follows the project
-transport and tempo, so edits stay in phase with the beat. The sequencer is based on
+transport and tempo, so edits stay in phase with the beat. The Euclidean sequencer at its base comes from
 [intelliriffer/EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar (see [credits](#credits-and-licence)).
 
 <img width="480" alt="Euclid, LANES tab" src="docs/img/euclid-lanes.png">
@@ -109,11 +109,11 @@ a fake host, and checks every note against the song position through loops, temp
 
 ## Credits and licence
 
-- The sequencer is [EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar
-  ([intelliriffer](https://github.com/intelliriffer)): the Bjorklund generator is his code, unchanged, and the lane logic in
-  `src/core` is a port of his lane class. The chord progressions come from it too.
-- The Force rework (stateless step position), the in-plugin core, the plugin, the skin and the installers are by
-  [sd88me](https://github.com/sd88me).
+- **Amit Talwar** ([intelliriffer](https://github.com/intelliriffer)) wrote the Euclidean sequencer this started from,
+  [EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE): the Bjorklund pattern generator (used here unchanged), the lane
+  logic that `src/core` is a port of, and the chord progressions in `docs/progressions`.
+- Everything else is [sd88me](https://github.com/sd88me)'s: the plugin, the in-plugin timing core, the skin design, the ALL view, tap-to-draw
+  steps and the other features, and the installers.
 
 MIT, see [LICENSE](LICENSE). That covers sd88me's own work. Upstream publishes no licence file, so code inherited from
 `intelliriffer/EUCLIDIER-CONSOLE` stays subject to whatever terms its author intends, once clarified.
