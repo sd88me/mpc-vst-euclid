@@ -6886,6 +6886,1620 @@
     "ON >"
    ],
    "default": 0
+  },
+  {
+   "key": "sel_ch_prev",
+   "name": "sel_ch_prev",
+   "momentary": true,
+   "step_of": "sel_ch",
+   "step_delta": -1
+  },
+  {
+   "key": "sel_ch_next",
+   "name": "sel_ch_next",
+   "momentary": true,
+   "step_of": "sel_ch",
+   "step_delta": 1
+  },
+  {
+   "key": "view",
+   "name": "View",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "ALL"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m1_on",
+   "name": "Custom 1",
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "m1_a",
+   "name": "Custom 1 lo",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m1_b",
+   "name": "Custom 1 hi",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m2_on",
+   "name": "Custom 2",
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "m2_a",
+   "name": "Custom 2 lo",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m2_b",
+   "name": "Custom 2 hi",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m3_on",
+   "name": "Custom 3",
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "m3_a",
+   "name": "Custom 3 lo",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m3_b",
+   "name": "Custom 3 hi",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m4_on",
+   "name": "Custom 4",
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "m4_a",
+   "name": "Custom 4 lo",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m4_b",
+   "name": "Custom 4 hi",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m5_on",
+   "name": "Custom 5",
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "m5_a",
+   "name": "Custom 5 lo",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m5_b",
+   "name": "Custom 5 hi",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m6_on",
+   "name": "Custom 6",
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "m6_a",
+   "name": "Custom 6 lo",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m6_b",
+   "name": "Custom 6 hi",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m7_on",
+   "name": "Custom 7",
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "m7_a",
+   "name": "Custom 7 lo",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m7_b",
+   "name": "Custom 7 hi",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m8_on",
+   "name": "Custom 8",
+   "min": 0,
+   "max": 1
+  },
+  {
+   "key": "m8_a",
+   "name": "Custom 8 lo",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "m8_b",
+   "name": "Custom 8 hi",
+   "min": 0,
+   "max": 65535
+  },
+  {
+   "key": "tg1_0",
+   "name": "Tap 1.0",
+   "momentary": true
+  },
+  {
+   "key": "tg1_1",
+   "name": "Tap 1.1",
+   "momentary": true
+  },
+  {
+   "key": "tg1_2",
+   "name": "Tap 1.2",
+   "momentary": true
+  },
+  {
+   "key": "tg1_3",
+   "name": "Tap 1.3",
+   "momentary": true
+  },
+  {
+   "key": "tg1_4",
+   "name": "Tap 1.4",
+   "momentary": true
+  },
+  {
+   "key": "tg1_5",
+   "name": "Tap 1.5",
+   "momentary": true
+  },
+  {
+   "key": "tg1_6",
+   "name": "Tap 1.6",
+   "momentary": true
+  },
+  {
+   "key": "tg1_7",
+   "name": "Tap 1.7",
+   "momentary": true
+  },
+  {
+   "key": "tg1_8",
+   "name": "Tap 1.8",
+   "momentary": true
+  },
+  {
+   "key": "tg1_9",
+   "name": "Tap 1.9",
+   "momentary": true
+  },
+  {
+   "key": "tg1_10",
+   "name": "Tap 1.10",
+   "momentary": true
+  },
+  {
+   "key": "tg1_11",
+   "name": "Tap 1.11",
+   "momentary": true
+  },
+  {
+   "key": "tg1_12",
+   "name": "Tap 1.12",
+   "momentary": true
+  },
+  {
+   "key": "tg1_13",
+   "name": "Tap 1.13",
+   "momentary": true
+  },
+  {
+   "key": "tg1_14",
+   "name": "Tap 1.14",
+   "momentary": true
+  },
+  {
+   "key": "tg1_15",
+   "name": "Tap 1.15",
+   "momentary": true
+  },
+  {
+   "key": "tg1_16",
+   "name": "Tap 1.16",
+   "momentary": true
+  },
+  {
+   "key": "tg1_17",
+   "name": "Tap 1.17",
+   "momentary": true
+  },
+  {
+   "key": "tg1_18",
+   "name": "Tap 1.18",
+   "momentary": true
+  },
+  {
+   "key": "tg1_19",
+   "name": "Tap 1.19",
+   "momentary": true
+  },
+  {
+   "key": "tg1_20",
+   "name": "Tap 1.20",
+   "momentary": true
+  },
+  {
+   "key": "tg1_21",
+   "name": "Tap 1.21",
+   "momentary": true
+  },
+  {
+   "key": "tg1_22",
+   "name": "Tap 1.22",
+   "momentary": true
+  },
+  {
+   "key": "tg1_23",
+   "name": "Tap 1.23",
+   "momentary": true
+  },
+  {
+   "key": "tg1_24",
+   "name": "Tap 1.24",
+   "momentary": true
+  },
+  {
+   "key": "tg1_25",
+   "name": "Tap 1.25",
+   "momentary": true
+  },
+  {
+   "key": "tg1_26",
+   "name": "Tap 1.26",
+   "momentary": true
+  },
+  {
+   "key": "tg1_27",
+   "name": "Tap 1.27",
+   "momentary": true
+  },
+  {
+   "key": "tg1_28",
+   "name": "Tap 1.28",
+   "momentary": true
+  },
+  {
+   "key": "tg1_29",
+   "name": "Tap 1.29",
+   "momentary": true
+  },
+  {
+   "key": "tg1_30",
+   "name": "Tap 1.30",
+   "momentary": true
+  },
+  {
+   "key": "tg1_31",
+   "name": "Tap 1.31",
+   "momentary": true
+  },
+  {
+   "key": "tg2_0",
+   "name": "Tap 2.0",
+   "momentary": true
+  },
+  {
+   "key": "tg2_1",
+   "name": "Tap 2.1",
+   "momentary": true
+  },
+  {
+   "key": "tg2_2",
+   "name": "Tap 2.2",
+   "momentary": true
+  },
+  {
+   "key": "tg2_3",
+   "name": "Tap 2.3",
+   "momentary": true
+  },
+  {
+   "key": "tg2_4",
+   "name": "Tap 2.4",
+   "momentary": true
+  },
+  {
+   "key": "tg2_5",
+   "name": "Tap 2.5",
+   "momentary": true
+  },
+  {
+   "key": "tg2_6",
+   "name": "Tap 2.6",
+   "momentary": true
+  },
+  {
+   "key": "tg2_7",
+   "name": "Tap 2.7",
+   "momentary": true
+  },
+  {
+   "key": "tg2_8",
+   "name": "Tap 2.8",
+   "momentary": true
+  },
+  {
+   "key": "tg2_9",
+   "name": "Tap 2.9",
+   "momentary": true
+  },
+  {
+   "key": "tg2_10",
+   "name": "Tap 2.10",
+   "momentary": true
+  },
+  {
+   "key": "tg2_11",
+   "name": "Tap 2.11",
+   "momentary": true
+  },
+  {
+   "key": "tg2_12",
+   "name": "Tap 2.12",
+   "momentary": true
+  },
+  {
+   "key": "tg2_13",
+   "name": "Tap 2.13",
+   "momentary": true
+  },
+  {
+   "key": "tg2_14",
+   "name": "Tap 2.14",
+   "momentary": true
+  },
+  {
+   "key": "tg2_15",
+   "name": "Tap 2.15",
+   "momentary": true
+  },
+  {
+   "key": "tg2_16",
+   "name": "Tap 2.16",
+   "momentary": true
+  },
+  {
+   "key": "tg2_17",
+   "name": "Tap 2.17",
+   "momentary": true
+  },
+  {
+   "key": "tg2_18",
+   "name": "Tap 2.18",
+   "momentary": true
+  },
+  {
+   "key": "tg2_19",
+   "name": "Tap 2.19",
+   "momentary": true
+  },
+  {
+   "key": "tg2_20",
+   "name": "Tap 2.20",
+   "momentary": true
+  },
+  {
+   "key": "tg2_21",
+   "name": "Tap 2.21",
+   "momentary": true
+  },
+  {
+   "key": "tg2_22",
+   "name": "Tap 2.22",
+   "momentary": true
+  },
+  {
+   "key": "tg2_23",
+   "name": "Tap 2.23",
+   "momentary": true
+  },
+  {
+   "key": "tg2_24",
+   "name": "Tap 2.24",
+   "momentary": true
+  },
+  {
+   "key": "tg2_25",
+   "name": "Tap 2.25",
+   "momentary": true
+  },
+  {
+   "key": "tg2_26",
+   "name": "Tap 2.26",
+   "momentary": true
+  },
+  {
+   "key": "tg2_27",
+   "name": "Tap 2.27",
+   "momentary": true
+  },
+  {
+   "key": "tg2_28",
+   "name": "Tap 2.28",
+   "momentary": true
+  },
+  {
+   "key": "tg2_29",
+   "name": "Tap 2.29",
+   "momentary": true
+  },
+  {
+   "key": "tg2_30",
+   "name": "Tap 2.30",
+   "momentary": true
+  },
+  {
+   "key": "tg2_31",
+   "name": "Tap 2.31",
+   "momentary": true
+  },
+  {
+   "key": "tg3_0",
+   "name": "Tap 3.0",
+   "momentary": true
+  },
+  {
+   "key": "tg3_1",
+   "name": "Tap 3.1",
+   "momentary": true
+  },
+  {
+   "key": "tg3_2",
+   "name": "Tap 3.2",
+   "momentary": true
+  },
+  {
+   "key": "tg3_3",
+   "name": "Tap 3.3",
+   "momentary": true
+  },
+  {
+   "key": "tg3_4",
+   "name": "Tap 3.4",
+   "momentary": true
+  },
+  {
+   "key": "tg3_5",
+   "name": "Tap 3.5",
+   "momentary": true
+  },
+  {
+   "key": "tg3_6",
+   "name": "Tap 3.6",
+   "momentary": true
+  },
+  {
+   "key": "tg3_7",
+   "name": "Tap 3.7",
+   "momentary": true
+  },
+  {
+   "key": "tg3_8",
+   "name": "Tap 3.8",
+   "momentary": true
+  },
+  {
+   "key": "tg3_9",
+   "name": "Tap 3.9",
+   "momentary": true
+  },
+  {
+   "key": "tg3_10",
+   "name": "Tap 3.10",
+   "momentary": true
+  },
+  {
+   "key": "tg3_11",
+   "name": "Tap 3.11",
+   "momentary": true
+  },
+  {
+   "key": "tg3_12",
+   "name": "Tap 3.12",
+   "momentary": true
+  },
+  {
+   "key": "tg3_13",
+   "name": "Tap 3.13",
+   "momentary": true
+  },
+  {
+   "key": "tg3_14",
+   "name": "Tap 3.14",
+   "momentary": true
+  },
+  {
+   "key": "tg3_15",
+   "name": "Tap 3.15",
+   "momentary": true
+  },
+  {
+   "key": "tg3_16",
+   "name": "Tap 3.16",
+   "momentary": true
+  },
+  {
+   "key": "tg3_17",
+   "name": "Tap 3.17",
+   "momentary": true
+  },
+  {
+   "key": "tg3_18",
+   "name": "Tap 3.18",
+   "momentary": true
+  },
+  {
+   "key": "tg3_19",
+   "name": "Tap 3.19",
+   "momentary": true
+  },
+  {
+   "key": "tg3_20",
+   "name": "Tap 3.20",
+   "momentary": true
+  },
+  {
+   "key": "tg3_21",
+   "name": "Tap 3.21",
+   "momentary": true
+  },
+  {
+   "key": "tg3_22",
+   "name": "Tap 3.22",
+   "momentary": true
+  },
+  {
+   "key": "tg3_23",
+   "name": "Tap 3.23",
+   "momentary": true
+  },
+  {
+   "key": "tg3_24",
+   "name": "Tap 3.24",
+   "momentary": true
+  },
+  {
+   "key": "tg3_25",
+   "name": "Tap 3.25",
+   "momentary": true
+  },
+  {
+   "key": "tg3_26",
+   "name": "Tap 3.26",
+   "momentary": true
+  },
+  {
+   "key": "tg3_27",
+   "name": "Tap 3.27",
+   "momentary": true
+  },
+  {
+   "key": "tg3_28",
+   "name": "Tap 3.28",
+   "momentary": true
+  },
+  {
+   "key": "tg3_29",
+   "name": "Tap 3.29",
+   "momentary": true
+  },
+  {
+   "key": "tg3_30",
+   "name": "Tap 3.30",
+   "momentary": true
+  },
+  {
+   "key": "tg3_31",
+   "name": "Tap 3.31",
+   "momentary": true
+  },
+  {
+   "key": "tg4_0",
+   "name": "Tap 4.0",
+   "momentary": true
+  },
+  {
+   "key": "tg4_1",
+   "name": "Tap 4.1",
+   "momentary": true
+  },
+  {
+   "key": "tg4_2",
+   "name": "Tap 4.2",
+   "momentary": true
+  },
+  {
+   "key": "tg4_3",
+   "name": "Tap 4.3",
+   "momentary": true
+  },
+  {
+   "key": "tg4_4",
+   "name": "Tap 4.4",
+   "momentary": true
+  },
+  {
+   "key": "tg4_5",
+   "name": "Tap 4.5",
+   "momentary": true
+  },
+  {
+   "key": "tg4_6",
+   "name": "Tap 4.6",
+   "momentary": true
+  },
+  {
+   "key": "tg4_7",
+   "name": "Tap 4.7",
+   "momentary": true
+  },
+  {
+   "key": "tg4_8",
+   "name": "Tap 4.8",
+   "momentary": true
+  },
+  {
+   "key": "tg4_9",
+   "name": "Tap 4.9",
+   "momentary": true
+  },
+  {
+   "key": "tg4_10",
+   "name": "Tap 4.10",
+   "momentary": true
+  },
+  {
+   "key": "tg4_11",
+   "name": "Tap 4.11",
+   "momentary": true
+  },
+  {
+   "key": "tg4_12",
+   "name": "Tap 4.12",
+   "momentary": true
+  },
+  {
+   "key": "tg4_13",
+   "name": "Tap 4.13",
+   "momentary": true
+  },
+  {
+   "key": "tg4_14",
+   "name": "Tap 4.14",
+   "momentary": true
+  },
+  {
+   "key": "tg4_15",
+   "name": "Tap 4.15",
+   "momentary": true
+  },
+  {
+   "key": "tg4_16",
+   "name": "Tap 4.16",
+   "momentary": true
+  },
+  {
+   "key": "tg4_17",
+   "name": "Tap 4.17",
+   "momentary": true
+  },
+  {
+   "key": "tg4_18",
+   "name": "Tap 4.18",
+   "momentary": true
+  },
+  {
+   "key": "tg4_19",
+   "name": "Tap 4.19",
+   "momentary": true
+  },
+  {
+   "key": "tg4_20",
+   "name": "Tap 4.20",
+   "momentary": true
+  },
+  {
+   "key": "tg4_21",
+   "name": "Tap 4.21",
+   "momentary": true
+  },
+  {
+   "key": "tg4_22",
+   "name": "Tap 4.22",
+   "momentary": true
+  },
+  {
+   "key": "tg4_23",
+   "name": "Tap 4.23",
+   "momentary": true
+  },
+  {
+   "key": "tg4_24",
+   "name": "Tap 4.24",
+   "momentary": true
+  },
+  {
+   "key": "tg4_25",
+   "name": "Tap 4.25",
+   "momentary": true
+  },
+  {
+   "key": "tg4_26",
+   "name": "Tap 4.26",
+   "momentary": true
+  },
+  {
+   "key": "tg4_27",
+   "name": "Tap 4.27",
+   "momentary": true
+  },
+  {
+   "key": "tg4_28",
+   "name": "Tap 4.28",
+   "momentary": true
+  },
+  {
+   "key": "tg4_29",
+   "name": "Tap 4.29",
+   "momentary": true
+  },
+  {
+   "key": "tg4_30",
+   "name": "Tap 4.30",
+   "momentary": true
+  },
+  {
+   "key": "tg4_31",
+   "name": "Tap 4.31",
+   "momentary": true
+  },
+  {
+   "key": "tg5_0",
+   "name": "Tap 5.0",
+   "momentary": true
+  },
+  {
+   "key": "tg5_1",
+   "name": "Tap 5.1",
+   "momentary": true
+  },
+  {
+   "key": "tg5_2",
+   "name": "Tap 5.2",
+   "momentary": true
+  },
+  {
+   "key": "tg5_3",
+   "name": "Tap 5.3",
+   "momentary": true
+  },
+  {
+   "key": "tg5_4",
+   "name": "Tap 5.4",
+   "momentary": true
+  },
+  {
+   "key": "tg5_5",
+   "name": "Tap 5.5",
+   "momentary": true
+  },
+  {
+   "key": "tg5_6",
+   "name": "Tap 5.6",
+   "momentary": true
+  },
+  {
+   "key": "tg5_7",
+   "name": "Tap 5.7",
+   "momentary": true
+  },
+  {
+   "key": "tg5_8",
+   "name": "Tap 5.8",
+   "momentary": true
+  },
+  {
+   "key": "tg5_9",
+   "name": "Tap 5.9",
+   "momentary": true
+  },
+  {
+   "key": "tg5_10",
+   "name": "Tap 5.10",
+   "momentary": true
+  },
+  {
+   "key": "tg5_11",
+   "name": "Tap 5.11",
+   "momentary": true
+  },
+  {
+   "key": "tg5_12",
+   "name": "Tap 5.12",
+   "momentary": true
+  },
+  {
+   "key": "tg5_13",
+   "name": "Tap 5.13",
+   "momentary": true
+  },
+  {
+   "key": "tg5_14",
+   "name": "Tap 5.14",
+   "momentary": true
+  },
+  {
+   "key": "tg5_15",
+   "name": "Tap 5.15",
+   "momentary": true
+  },
+  {
+   "key": "tg5_16",
+   "name": "Tap 5.16",
+   "momentary": true
+  },
+  {
+   "key": "tg5_17",
+   "name": "Tap 5.17",
+   "momentary": true
+  },
+  {
+   "key": "tg5_18",
+   "name": "Tap 5.18",
+   "momentary": true
+  },
+  {
+   "key": "tg5_19",
+   "name": "Tap 5.19",
+   "momentary": true
+  },
+  {
+   "key": "tg5_20",
+   "name": "Tap 5.20",
+   "momentary": true
+  },
+  {
+   "key": "tg5_21",
+   "name": "Tap 5.21",
+   "momentary": true
+  },
+  {
+   "key": "tg5_22",
+   "name": "Tap 5.22",
+   "momentary": true
+  },
+  {
+   "key": "tg5_23",
+   "name": "Tap 5.23",
+   "momentary": true
+  },
+  {
+   "key": "tg5_24",
+   "name": "Tap 5.24",
+   "momentary": true
+  },
+  {
+   "key": "tg5_25",
+   "name": "Tap 5.25",
+   "momentary": true
+  },
+  {
+   "key": "tg5_26",
+   "name": "Tap 5.26",
+   "momentary": true
+  },
+  {
+   "key": "tg5_27",
+   "name": "Tap 5.27",
+   "momentary": true
+  },
+  {
+   "key": "tg5_28",
+   "name": "Tap 5.28",
+   "momentary": true
+  },
+  {
+   "key": "tg5_29",
+   "name": "Tap 5.29",
+   "momentary": true
+  },
+  {
+   "key": "tg5_30",
+   "name": "Tap 5.30",
+   "momentary": true
+  },
+  {
+   "key": "tg5_31",
+   "name": "Tap 5.31",
+   "momentary": true
+  },
+  {
+   "key": "tg6_0",
+   "name": "Tap 6.0",
+   "momentary": true
+  },
+  {
+   "key": "tg6_1",
+   "name": "Tap 6.1",
+   "momentary": true
+  },
+  {
+   "key": "tg6_2",
+   "name": "Tap 6.2",
+   "momentary": true
+  },
+  {
+   "key": "tg6_3",
+   "name": "Tap 6.3",
+   "momentary": true
+  },
+  {
+   "key": "tg6_4",
+   "name": "Tap 6.4",
+   "momentary": true
+  },
+  {
+   "key": "tg6_5",
+   "name": "Tap 6.5",
+   "momentary": true
+  },
+  {
+   "key": "tg6_6",
+   "name": "Tap 6.6",
+   "momentary": true
+  },
+  {
+   "key": "tg6_7",
+   "name": "Tap 6.7",
+   "momentary": true
+  },
+  {
+   "key": "tg6_8",
+   "name": "Tap 6.8",
+   "momentary": true
+  },
+  {
+   "key": "tg6_9",
+   "name": "Tap 6.9",
+   "momentary": true
+  },
+  {
+   "key": "tg6_10",
+   "name": "Tap 6.10",
+   "momentary": true
+  },
+  {
+   "key": "tg6_11",
+   "name": "Tap 6.11",
+   "momentary": true
+  },
+  {
+   "key": "tg6_12",
+   "name": "Tap 6.12",
+   "momentary": true
+  },
+  {
+   "key": "tg6_13",
+   "name": "Tap 6.13",
+   "momentary": true
+  },
+  {
+   "key": "tg6_14",
+   "name": "Tap 6.14",
+   "momentary": true
+  },
+  {
+   "key": "tg6_15",
+   "name": "Tap 6.15",
+   "momentary": true
+  },
+  {
+   "key": "tg6_16",
+   "name": "Tap 6.16",
+   "momentary": true
+  },
+  {
+   "key": "tg6_17",
+   "name": "Tap 6.17",
+   "momentary": true
+  },
+  {
+   "key": "tg6_18",
+   "name": "Tap 6.18",
+   "momentary": true
+  },
+  {
+   "key": "tg6_19",
+   "name": "Tap 6.19",
+   "momentary": true
+  },
+  {
+   "key": "tg6_20",
+   "name": "Tap 6.20",
+   "momentary": true
+  },
+  {
+   "key": "tg6_21",
+   "name": "Tap 6.21",
+   "momentary": true
+  },
+  {
+   "key": "tg6_22",
+   "name": "Tap 6.22",
+   "momentary": true
+  },
+  {
+   "key": "tg6_23",
+   "name": "Tap 6.23",
+   "momentary": true
+  },
+  {
+   "key": "tg6_24",
+   "name": "Tap 6.24",
+   "momentary": true
+  },
+  {
+   "key": "tg6_25",
+   "name": "Tap 6.25",
+   "momentary": true
+  },
+  {
+   "key": "tg6_26",
+   "name": "Tap 6.26",
+   "momentary": true
+  },
+  {
+   "key": "tg6_27",
+   "name": "Tap 6.27",
+   "momentary": true
+  },
+  {
+   "key": "tg6_28",
+   "name": "Tap 6.28",
+   "momentary": true
+  },
+  {
+   "key": "tg6_29",
+   "name": "Tap 6.29",
+   "momentary": true
+  },
+  {
+   "key": "tg6_30",
+   "name": "Tap 6.30",
+   "momentary": true
+  },
+  {
+   "key": "tg6_31",
+   "name": "Tap 6.31",
+   "momentary": true
+  },
+  {
+   "key": "tg7_0",
+   "name": "Tap 7.0",
+   "momentary": true
+  },
+  {
+   "key": "tg7_1",
+   "name": "Tap 7.1",
+   "momentary": true
+  },
+  {
+   "key": "tg7_2",
+   "name": "Tap 7.2",
+   "momentary": true
+  },
+  {
+   "key": "tg7_3",
+   "name": "Tap 7.3",
+   "momentary": true
+  },
+  {
+   "key": "tg7_4",
+   "name": "Tap 7.4",
+   "momentary": true
+  },
+  {
+   "key": "tg7_5",
+   "name": "Tap 7.5",
+   "momentary": true
+  },
+  {
+   "key": "tg7_6",
+   "name": "Tap 7.6",
+   "momentary": true
+  },
+  {
+   "key": "tg7_7",
+   "name": "Tap 7.7",
+   "momentary": true
+  },
+  {
+   "key": "tg7_8",
+   "name": "Tap 7.8",
+   "momentary": true
+  },
+  {
+   "key": "tg7_9",
+   "name": "Tap 7.9",
+   "momentary": true
+  },
+  {
+   "key": "tg7_10",
+   "name": "Tap 7.10",
+   "momentary": true
+  },
+  {
+   "key": "tg7_11",
+   "name": "Tap 7.11",
+   "momentary": true
+  },
+  {
+   "key": "tg7_12",
+   "name": "Tap 7.12",
+   "momentary": true
+  },
+  {
+   "key": "tg7_13",
+   "name": "Tap 7.13",
+   "momentary": true
+  },
+  {
+   "key": "tg7_14",
+   "name": "Tap 7.14",
+   "momentary": true
+  },
+  {
+   "key": "tg7_15",
+   "name": "Tap 7.15",
+   "momentary": true
+  },
+  {
+   "key": "tg7_16",
+   "name": "Tap 7.16",
+   "momentary": true
+  },
+  {
+   "key": "tg7_17",
+   "name": "Tap 7.17",
+   "momentary": true
+  },
+  {
+   "key": "tg7_18",
+   "name": "Tap 7.18",
+   "momentary": true
+  },
+  {
+   "key": "tg7_19",
+   "name": "Tap 7.19",
+   "momentary": true
+  },
+  {
+   "key": "tg7_20",
+   "name": "Tap 7.20",
+   "momentary": true
+  },
+  {
+   "key": "tg7_21",
+   "name": "Tap 7.21",
+   "momentary": true
+  },
+  {
+   "key": "tg7_22",
+   "name": "Tap 7.22",
+   "momentary": true
+  },
+  {
+   "key": "tg7_23",
+   "name": "Tap 7.23",
+   "momentary": true
+  },
+  {
+   "key": "tg7_24",
+   "name": "Tap 7.24",
+   "momentary": true
+  },
+  {
+   "key": "tg7_25",
+   "name": "Tap 7.25",
+   "momentary": true
+  },
+  {
+   "key": "tg7_26",
+   "name": "Tap 7.26",
+   "momentary": true
+  },
+  {
+   "key": "tg7_27",
+   "name": "Tap 7.27",
+   "momentary": true
+  },
+  {
+   "key": "tg7_28",
+   "name": "Tap 7.28",
+   "momentary": true
+  },
+  {
+   "key": "tg7_29",
+   "name": "Tap 7.29",
+   "momentary": true
+  },
+  {
+   "key": "tg7_30",
+   "name": "Tap 7.30",
+   "momentary": true
+  },
+  {
+   "key": "tg7_31",
+   "name": "Tap 7.31",
+   "momentary": true
+  },
+  {
+   "key": "tg8_0",
+   "name": "Tap 8.0",
+   "momentary": true
+  },
+  {
+   "key": "tg8_1",
+   "name": "Tap 8.1",
+   "momentary": true
+  },
+  {
+   "key": "tg8_2",
+   "name": "Tap 8.2",
+   "momentary": true
+  },
+  {
+   "key": "tg8_3",
+   "name": "Tap 8.3",
+   "momentary": true
+  },
+  {
+   "key": "tg8_4",
+   "name": "Tap 8.4",
+   "momentary": true
+  },
+  {
+   "key": "tg8_5",
+   "name": "Tap 8.5",
+   "momentary": true
+  },
+  {
+   "key": "tg8_6",
+   "name": "Tap 8.6",
+   "momentary": true
+  },
+  {
+   "key": "tg8_7",
+   "name": "Tap 8.7",
+   "momentary": true
+  },
+  {
+   "key": "tg8_8",
+   "name": "Tap 8.8",
+   "momentary": true
+  },
+  {
+   "key": "tg8_9",
+   "name": "Tap 8.9",
+   "momentary": true
+  },
+  {
+   "key": "tg8_10",
+   "name": "Tap 8.10",
+   "momentary": true
+  },
+  {
+   "key": "tg8_11",
+   "name": "Tap 8.11",
+   "momentary": true
+  },
+  {
+   "key": "tg8_12",
+   "name": "Tap 8.12",
+   "momentary": true
+  },
+  {
+   "key": "tg8_13",
+   "name": "Tap 8.13",
+   "momentary": true
+  },
+  {
+   "key": "tg8_14",
+   "name": "Tap 8.14",
+   "momentary": true
+  },
+  {
+   "key": "tg8_15",
+   "name": "Tap 8.15",
+   "momentary": true
+  },
+  {
+   "key": "tg8_16",
+   "name": "Tap 8.16",
+   "momentary": true
+  },
+  {
+   "key": "tg8_17",
+   "name": "Tap 8.17",
+   "momentary": true
+  },
+  {
+   "key": "tg8_18",
+   "name": "Tap 8.18",
+   "momentary": true
+  },
+  {
+   "key": "tg8_19",
+   "name": "Tap 8.19",
+   "momentary": true
+  },
+  {
+   "key": "tg8_20",
+   "name": "Tap 8.20",
+   "momentary": true
+  },
+  {
+   "key": "tg8_21",
+   "name": "Tap 8.21",
+   "momentary": true
+  },
+  {
+   "key": "tg8_22",
+   "name": "Tap 8.22",
+   "momentary": true
+  },
+  {
+   "key": "tg8_23",
+   "name": "Tap 8.23",
+   "momentary": true
+  },
+  {
+   "key": "tg8_24",
+   "name": "Tap 8.24",
+   "momentary": true
+  },
+  {
+   "key": "tg8_25",
+   "name": "Tap 8.25",
+   "momentary": true
+  },
+  {
+   "key": "tg8_26",
+   "name": "Tap 8.26",
+   "momentary": true
+  },
+  {
+   "key": "tg8_27",
+   "name": "Tap 8.27",
+   "momentary": true
+  },
+  {
+   "key": "tg8_28",
+   "name": "Tap 8.28",
+   "momentary": true
+  },
+  {
+   "key": "tg8_29",
+   "name": "Tap 8.29",
+   "momentary": true
+  },
+  {
+   "key": "tg8_30",
+   "name": "Tap 8.30",
+   "momentary": true
+  },
+  {
+   "key": "tg8_31",
+   "name": "Tap 8.31",
+   "momentary": true
+  },
+  {
+   "key": "ct_0",
+   "name": "Tap ring 0",
+   "momentary": true
+  },
+  {
+   "key": "ct_1",
+   "name": "Tap ring 1",
+   "momentary": true
+  },
+  {
+   "key": "ct_2",
+   "name": "Tap ring 2",
+   "momentary": true
+  },
+  {
+   "key": "ct_3",
+   "name": "Tap ring 3",
+   "momentary": true
+  },
+  {
+   "key": "ct_4",
+   "name": "Tap ring 4",
+   "momentary": true
+  },
+  {
+   "key": "ct_5",
+   "name": "Tap ring 5",
+   "momentary": true
+  },
+  {
+   "key": "ct_6",
+   "name": "Tap ring 6",
+   "momentary": true
+  },
+  {
+   "key": "ct_7",
+   "name": "Tap ring 7",
+   "momentary": true
+  },
+  {
+   "key": "ct_8",
+   "name": "Tap ring 8",
+   "momentary": true
+  },
+  {
+   "key": "ct_9",
+   "name": "Tap ring 9",
+   "momentary": true
+  },
+  {
+   "key": "ct_10",
+   "name": "Tap ring 10",
+   "momentary": true
+  },
+  {
+   "key": "ct_11",
+   "name": "Tap ring 11",
+   "momentary": true
+  },
+  {
+   "key": "ct_12",
+   "name": "Tap ring 12",
+   "momentary": true
+  },
+  {
+   "key": "ct_13",
+   "name": "Tap ring 13",
+   "momentary": true
+  },
+  {
+   "key": "ct_14",
+   "name": "Tap ring 14",
+   "momentary": true
+  },
+  {
+   "key": "ct_15",
+   "name": "Tap ring 15",
+   "momentary": true
+  },
+  {
+   "key": "ct_16",
+   "name": "Tap ring 16",
+   "momentary": true
+  },
+  {
+   "key": "ct_17",
+   "name": "Tap ring 17",
+   "momentary": true
+  },
+  {
+   "key": "ct_18",
+   "name": "Tap ring 18",
+   "momentary": true
+  },
+  {
+   "key": "ct_19",
+   "name": "Tap ring 19",
+   "momentary": true
+  },
+  {
+   "key": "ct_20",
+   "name": "Tap ring 20",
+   "momentary": true
+  },
+  {
+   "key": "ct_21",
+   "name": "Tap ring 21",
+   "momentary": true
+  },
+  {
+   "key": "ct_22",
+   "name": "Tap ring 22",
+   "momentary": true
+  },
+  {
+   "key": "ct_23",
+   "name": "Tap ring 23",
+   "momentary": true
+  },
+  {
+   "key": "ct_24",
+   "name": "Tap ring 24",
+   "momentary": true
+  },
+  {
+   "key": "ct_25",
+   "name": "Tap ring 25",
+   "momentary": true
+  },
+  {
+   "key": "ct_26",
+   "name": "Tap ring 26",
+   "momentary": true
+  },
+  {
+   "key": "ct_27",
+   "name": "Tap ring 27",
+   "momentary": true
+  },
+  {
+   "key": "ct_28",
+   "name": "Tap ring 28",
+   "momentary": true
+  },
+  {
+   "key": "ct_29",
+   "name": "Tap ring 29",
+   "momentary": true
+  },
+  {
+   "key": "ct_30",
+   "name": "Tap ring 30",
+   "momentary": true
+  },
+  {
+   "key": "ct_31",
+   "name": "Tap ring 31",
+   "momentary": true
   }
  ]
 }

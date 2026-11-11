@@ -1,114 +1,118 @@
-# Euclidier
+# Euclid
 
 💬 Questions or feedback? Join the [Open MPC Discord](https://discord.gg/sRRysZSgu3).
 
-Euclidier as a native plugin for Akai MPC OS standalone devices (Force, MPC Live/One/X/Key): an 8-lane Euclidean
-MIDI sequencer with its own MPC screen skin and Q-Links. This repo holds the plugin and the sequencer engine it runs.
-The engine is based on [intelliriffer/EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit
-Talwar, reworked for the MPC/Force (see [credits](#credits-and-licence)).
-
-## What it does
-
-Eight independent lanes each spread a number of hits (**fill**) as evenly as possible over a number of **steps**, with a
-**shift** (rotation), an optional **loop** point, a note (or a drum note), MIDI channel, gate, velocity and humanise, and
-a time division. The plugin makes no sound: it plays MIDI into other tracks, and it follows the project transport and
-tempo, so edits stay in phase with the beat.
+Euclid (formerly Euclidier) is an 8-lane Euclidean MIDI sequencer for Akai MPC OS standalone devices (Force, MPC Live / One / X / Key,
+Live III), with its own MPC screen skin and Q-Links. It makes no sound: it plays MIDI into other tracks, and follows the project
+transport and tempo, so edits stay in phase with the beat. The sequencer is based on
+[intelliriffer/EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar (see [credits](#credits-and-licence)).
 
 <img width="320" height="200" alt="2026-10-03T124201676Z" src="https://github.com/user-attachments/assets/94c88fd0-436b-4d1a-8aa4-cb8a376adb89" />
 <img width="320" height="200" alt="2026-10-03T124157924Z" src="https://github.com/user-attachments/assets/708f8f74-1ec5-4dd7-bf24-7a0d2a1bbebe" />
+
+## What it does
+
+Eight independent lanes each spread a number of hits (**fill**) as evenly as possible over a number of **steps**, with a **shift**
+(rotation), an optional **loop** point (shorter than the steps for a short pattern, longer for a polyrhythm), a note or drum note,
+MIDI channel, gate, velocity, humanise, and a time division. Tap a step to turn it on or off by hand.
+
+A new instance starts with every lane in drum mode, lanes 1-4 on and 5-8 off, each of the four with its own Euclidean pattern: 16 steps
+with 4 hits (four on the floor), 8 with 3 (tresillo), 12 with 5, and 16 with 5. A saved project restores its own settings instead.
+
 ## The screen
 
-Two tabs, each with its own Q-Link page. The screen shows live state: patterns and play-heads follow the engine.
-Both tabs have **DRUM MODE ALL** (every lane to drum mode) and **RANDOMISE ALL** in the top bar.
+Two tabs, each with its own Q-Link page. DRUM MODE ALL and RANDOMISE ALL are in the top bar of both.
 
 | Tab | What is on it |
 |---|---|
-| **LANES** | The lane you are editing. A lane stepper (◀ LANE 1 ▶) chooses it. Its pattern is drawn as a circle with the play-head, with a RANDOMISE button for that lane in the corner of the panel. Knobs for STEPS, FILL, SHIFT, LOOP, GATE, VELOCITY, HUMANIZE, NOTE and MID CH., a division stepper, a NOTE / DRUM switch and the lane's enable. Q-Links 1-8 are steps, fill, shift, loop, gate, velocity, note and MID CH. (HUMANIZE is touch-only). |
-| **ALL** | All 8 lanes as rows: an enable lamp, the pattern as a row of cells with the play-head, and a RANDOMISE button for that lane. Q-Links 1-8 are the lane enables. |
+| **LANES** | Lane keys **1-8 and ALL**. The lane you pick shows as a circle of dots with the play-head (tap a dot to flip that step), its FILL / STEPS, a RANDOMISE button, and its twelve controls in three blocks of four, one block per Q-Link group: STEPS, FILL, SHIFT, LOOP / VELOCITY, HUMANIZE, GATE, NOTE / DIV, MIDI CH, LANE ON, MODE (NOTE or DRUM, under the NOTE knob). |
+| **ALL** | All 8 lanes as rows: an enable lamp, the pattern as a row of cells with the play-head (tap a cell to flip that step), the fill / steps, and a RANDOMISE button per lane. Q-Links 1-8 are the lane enables. |
 
-A new instance starts with every lane in drum mode, lanes 1-4 on and 5-8 off, each of the four with its own Euclidean pattern: 16 steps with 4 hits (four on
-the floor), 8 with 3 (tresillo), 12 with 5, and 16 with 5. A saved project restores its own settings instead.
+**ALL on the LANES tab** edits every lane at once. Only the controls that make sense for that remain: FILL, VELOCITY, HUMANIZE and GATE.
+They are relative: the knob shows the mean of the eight lanes, and turning it moves every lane by the same amount (a lane stops at its own
+limit). The circle shows the longest pattern, with its play-head. RANDOMISE then randomises every lane.
 
-Switching a lane to DRUM makes the engine set its note to that lane's own General MIDI drum slot (lane 1 is 36, lane 2
-is 37, and so on). The NOTE knob follows.
+**Drawing steps.** A tap flips one step. The pattern is then hand-made: it is kept, played and saved with the project until the lane's
+STEPS, FILL or SHIFT change, or it is randomised, which build the pattern again. A hand-made pattern survives changes to DIV, gate, velocity and the rest.
 
-Pattern displays change size with the lane's step count: the row cells and the circle come in size classes (rows: 8,
-16, 32 cells; circle: 8, 12, 16, 24, 32 dots). Counts between classes use the next class up, so a 12-step row has 12
-cells at the 16-step size and the circle spreads its steps evenly. The 32-step row doesn't show the play-head.
+**DRUM MODE ALL** puts every lane in DRUM mode and gives lane 1 to 8 the notes 36 to 43 (also a lane that was already in DRUM mode).
+Switching one lane to DRUM sets its note to its own slot in the same way (lane 1 is 36, lane 2 is 37, and so on); the NOTE knob follows.
+
+Pattern displays change size with the lane's step count: the row cells and the circle come in size classes (rows: 8, 16, 32 cells; circle:
+8, 12, 16, 24, 32 dots). Counts between classes use the next class up. The 32-step row doesn't show the play-head.
 
 ## Limits
 
-- **32 steps.** STEPS, FILL, SHIFT and LOOP stop at 32 (the engine allows 64). The step displays are built from many small
-  image components, and 64 steps made pages too slow to open.
-- **Slow first draw.** A page can take a moment to fill in when the plugin is first inserted. MPC is decoding the skin's
-  images, and the cells fill in once it is done.
-- **Display only.** Tapping a step does not edit it. Patterns come from steps, fill, shift and loop.
-- **No preset page.** The engine's 128 preset slots are not on the screen. The plugin's settings are saved with the MPC
-  project like any other plugin.
-- **Randomise** hits one lane or all of them; there is no lane picker.
+- **32 steps.** STEPS, FILL, SHIFT and LOOP stop at 32 (the sequencer allows 64). The step displays are built from many small images, and 64
+  steps made pages too slow to open.
+- **Slow first draw.** A page can take a moment to fill in when the plugin is first inserted, while MPC decodes the skin's images.
+- **No preset page.** The 128 preset slots of the original are not on the screen. The plugin's settings are saved with the MPC project like
+  any other plugin.
+- **Notes arrive within one audio block** of their step (about 3 ms at 128 frames), because MPC does not take a plugin's own MIDI output
+  and the notes go out through a MIDI port instead.
 
 ## Setting it up
 
-1. Download `Euclidier-<version>-mpc-armv7.zip` from the Releases page. It holds the plugin, its skin and the engine in
-   one folder, and an installer. Follow the zip's `INSTALL.md`: copy it to the device, then run `install.sh` as root. It
-   stops MPC (save your project first), adds the plugin and starts MPC again. A rooted device is required.
-2. Insert Euclidier on a track. The plugin starts its bundled engine, one per plugin instance, and talks to it over a
-   Unix control socket (`EUCLIDIER_BIN` can point it at another engine binary).
-3. The engine appears as a MIDI port named "Euclidier": MPC detects it on its own, and you enable it for the tracks
-   that should receive it in Preferences, MIDI. MPC ignores a plugin's own MIDI output, which is why the engine has its
-   own port.
-4. The plugin turns the host's transport and tempo into the MIDI clock the engine follows, so it plays and stops with
-   the project.
-
-Installing by hand, and what the installer changes, is in `INSTALL.md` and
-[mpc-vst-plugins](https://github.com/sd88me/mpc-vst-plugins) (`docs/RELEASING.md`).
+1. Download the zip for your device from the Releases page: `Euclid-<version>-VST2-Plugins-aarch64.zip` (Live III and other 64-bit MPCs)
+   or `-armv7.zip` (Force and other 32-bit MPCs). Each holds the plugin, its skin and an installer; follow the zip's `INSTALL.txt`
+   (copy it to the device, run the installer as root: it stops MPC, so save your project first). A rooted device is required.
+   **The installer removes an old Euclidier (1.x) for you:** its folder, its engine program and its plugin-list entry. The plugin id
+   is the same, so saved projects keep working, and your 1.x preset bank is moved across.
+2. Insert Euclid on a track (it is an instrument, with no sound).
+3. Euclid appears as a MIDI port named **Euclid**. MPC lists it as a MIDI input: set the MIDI input of the drum or synth tracks that
+   should play it to that port. (Euclidier's port was called Euclidier: **a track routed from the old port needs its input set again.**)
+4. Press play: Euclid follows the project's transport, position, loop and tempo.
 
 ## How it works
 
-- `vst/euclidier_vst.cpp` is a hand-written VST2 wrapper. Parameter changes only touch an in-memory cache; a worker
-  thread sends them to the engine and polls it about 33 times a second for each lane's `l<N>_pattern`
-  (`steps|bits|play|loop|enabled|selected`). Randomise buttons send the engine an ordered script (lane flag, `rand_go`, clear
-  the flags), because the engine's randomise acts on flagged lanes. Changes are reported to the host from `processReplacing` with
-  `audioMasterAutomate`, because MPC does not redraw engine-driven values on its own.
-- The step displays are display-only parameters, one per cell per size class (`g<lane>_<cap>_<slot>` for the lane rows,
-  `c<cap>_<slot>` for the circle). A cell is hidden, off, on, or (for the play-head) off or on with the play-head on it.
-  The skin shows one image per state. The play-head is a cell state because MPC crops each picture to an opaque
-  rectangle, so a ring drawn over the cells would hide them.
-- `vst/make_skin.py` generates `params.json`, `layout.conf` and `images/` (the engine's parameter list comes from
-  `vst/module.json`, the theme from `vst/layout.theme`). `tools/gen_vst.py` from mpc-vst-plugins then builds `params.h`
-  and the skin with the browser renderer (`"art": "html"` in `vst/vst.json`).
+- `src/core/euclid_core.h` is the sequencer: eight lanes stepped from a 24-ticks-per-quarter clock; the step is a pure function of the
+  tick, so editing never needs a resync. Note lengths are counted in samples. It is a library with no threads, I/O or allocation.
+- `src/sdk/EuclidierPlugin.cpp` is the plugin. The audio thread owns the core: each block it applies the commands the UI
+  queued, turns the host's song position into ticks (`vst/transport_grid.h`: ticks of the block are sent at its start, cut at the loop
+  end, and re-anchored to the song position at Start, at every loop wrap or locate and once a bar), steps the core, writes the block's
+  notes to the plugin's ALSA sequencer port, and publishes a snapshot of every value. A worker thread reads the snapshot to keep the
+  parameters, the step displays and the play-head current.
+- The parameters are the 669 of Euclidier 1.x, in the same order (`vst/params.lock`), with the new ones appended (`vst/params.json`): the
+  lane keys, each lane's hand-made pattern, the touch areas. Saved projects bind to the index, so the order never changes.
+- The step displays are display-only parameters, one per cell per size class; the skin shows one image per state. Taps go through
+  separate touch areas (32 slices per lane row, 32 sectors round the circle) that never overlap, as MPC gives a tap to the topmost button.
+- `tools/make_tui.py` draws the skin (`TUI.json`, `Q-Links.json`, the images) from code.
 
-## Building
+## Building and testing
 
 ```
-vst/build.sh          # needs Docker and a checkout of mpc-vst-plugins at ../../mpc-vst (or set MPC_VST)
+./build-sdk.sh test    # the offline tests, then the host simulator
+./build-sdk.sh beta    # "Euclid 2 Beta" (its own id), to install next to the release for testing
+tools/package.sh       # the release zips in dist/ (release identity)
+tools/package_catalog.sh  # the catalog zips (-mpc-armv7, -mpc-aarch64): what Plugin Manager installs; needs mpc-vst-plugins with release.py --retire
+tools/test_installers.sh   # the installers against a fake device
+tools/test_catalog_install.sh   # the catalog zip's installer against a fake Force that has Euclidier 1.x
 ```
 
-It runs `make_skin.py` and `gen_vst.py`, builds the plugin and its offline host test, runs the test, then cross-builds
-`vst/build/euclidier.so` for armhf. The skin is in `vst/build/skin/`. The host test (`vst/host_test.c`) checks, among
-other things, two instances, popups, the pattern cells and play-head against a stand-in engine
-(`vst/fake_engine.py`), the lane stepper, fresh-instance defaults, randomise (one lane, the selected lane, all) and DRUM MODE ALL. The test container has no ALSA sequencer, so the real
-engine can't run in it, which is why the stand-in speaks the engine's control-socket protocol.
+Needs Docker and Akai's MPC plugin builder (`MPC_SDK` points at it). The tests (`tests/run.sh`) run under ASan/UBSan: `core_equiv` steps the core against
+the original sequencer's lane class (1.5 million ticks, identical notes) and checks note bookkeeping; `host_test` drives the plugin through
+a fake host, and checks every note against the song position through loops, tempo changes, locates, stops and edits; `grid_test` checks the clock.
 
 ## Files
 
 | Path | What |
 |---|---|
-| `vst/euclidier_vst.cpp` | the plugin |
-| `vst/make_skin.py`, `vst/layout.theme` | skin generator and its theme |
-| `vst/params.json`, `vst/layout.conf`, `vst/images/` | generated by `make_skin.py` (committed) |
-| `vst/module.json` | the engine's control-socket key set |
-| `vst/fake_engine.py`, `vst/host_test.c` | offline test |
-| `src/` | the sequencer engine's sources (`src/ORIGIN.md` says where they came from) |
-| `docs/ENGINE.md` | what the Force rework changed, and the control-socket protocol |
-| `docs/MIDI-CC.md` | the engine's MIDI CC map |
-| `docs/progressions/` | chord-pad progression files for the engine's control track, with their own readme |
+| `src/core/` | the sequencer core |
+| `src/sdk/EuclidierPlugin.cpp`, `params_gen.h` | the plugin and its parameter table (generated by `tools/gen_sdk_params.py`) |
+| `src/bjlund.*`, `src/eqseq.*`, `src/commontypes.h` | the original Bjorklund generator (used) and lane class (the test's reference); `src/ORIGIN.md` says where they came from |
+| `vst/params.json`, `vst/params.lock` | the parameter list (edit by appending only) and the frozen 1.x order it must start with (`tools/gen_sdk_params.py` checks it) |
+| `vst/transport_grid.h`, `vst/grid_test.cpp` | the song-position clock and its test |
+| `tools/make_tui.py` | the skin generator |
+| `tools/install-force.sh`, `install-live3.sh`, `plugin_list.awk`, `package.py` | the one-off installers in the plain zips (they remove the old Euclidier) |
+| `tools/package_catalog.sh` | the catalog zips; their installer removes the old Euclidier through `release.py --retire` |
+| `docs/progressions/` | chord-pad progression files from the original, with their own readme (not used by the plugin) |
 
 ## Credits and licence
 
 - The sequencer is [EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar
-  ([intelliriffer](https://github.com/intelliriffer)); the engine and the chord progressions come from it.
-- The Force rework (stateless step position, lower CPU, the control socket), the plugin and its skin are by
+  ([intelliriffer](https://github.com/intelliriffer)): the Bjorklund generator is his code, unchanged, and the lane logic in
+  `src/core` is a port of his lane class. The chord progressions come from it too.
+- The Force rework (stateless step position), the in-plugin core, the plugin, the skin and the installers are by
   [sd88me](https://github.com/sd88me).
 
 MIT, see [LICENSE](LICENSE). That covers sd88me's own work. Upstream publishes no licence file, so code inherited from

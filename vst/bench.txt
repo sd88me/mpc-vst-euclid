@@ -1,1 +1,0 @@
-{"plugin":"/tmp/euclidier.so","instrument":1,"open_ms":1122.4,"p99_pct":2.2,"max_pct":11.5,"threads_pct":0.7,"verdict":"PASS"}

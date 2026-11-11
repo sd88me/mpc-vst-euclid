@@ -1,0 +1,16 @@
+{
+  "name": "Euclid",
+  "manufacturer": "sd88me",
+  "version": "2.0.0",
+  "kind": "instrument",
+  "uid": "EqDr",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/euclid-arm32.so",
+  "file64": "VST/euclid-arm64.so",
+  "description": "An eight-lane Euclidean rhythm sequencer, played as MIDI into drum or synth tracks. Makes no sound itself.",
+  "author": "sd88me",
+  "url": "https://github.com/sd88me/mpc-vst-euclidier",
+  "license": "MIT"
+}

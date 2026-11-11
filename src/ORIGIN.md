@@ -1,16 +1,18 @@
-# Where the engine comes from
+# Where the sequencer comes from
 
-`src/` is Euclidier's standalone sequencer engine, and this repo is now its home: edit it here.
+The sequencer started as [intelliriffer/EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar. It was
+reworked for the Akai Force in `sd88me/force-euclidier` (now archived), then copied into this repo from that repo's commit
+`1268b0e1f0f55e963c754891d94cc0055bee4cb1` (2026-09-25). Up to Euclidier 1.x the plugin ran that standalone program as a child process.
 
-- It started as [intelliriffer/EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar.
-- It was reworked for the Akai Force in `sd88me/force-euclidier` (now archived), then copied here from that repo's
-  commit `1268b0e1f0f55e963c754891d94cc0055bee4cb1` (2026-09-25). The sources are unchanged from that commit, which
-  was the last one to touch them.
-- Files: `euclidier.cpp`, `eqseq.cpp`/`.h`, `bjlund.cpp`/`.h`, `commontypes.h`, `RtMidi.cpp`/`.h`, `RtError.h`,
-  `testalgo.cpp`.
+What is left of it here:
 
-`vst/build.sh` builds them into the `euclidier` engine that the plugin starts (one per plugin instance, over its
-control socket, see `docs/ENGINE.md`). The offline host test runs against `vst/fake_engine.py` instead, because the
-engine needs an ALSA sequencer that the test container does not have.
+- `bjlund.cpp`, `bjlund.h`: the Bjorklund pattern generator, unchanged. Compiled into the plugin (`src/core/euclid_core.cpp` builds a
+  table of every pattern from it once).
+- `eqseq.cpp`, `eqseq.h`, `commontypes.h`: the original lane class and preset structs, unchanged. The plugin does not use the class: its
+  logic is ported to `core/euclid_core.h`, and `tests/core_equiv.cpp` steps both with the same values and ticks and compares every
+  note (`commontypes.h` is used, for the preset bank format). They stay as the test's reference.
+- The rest of the original program (its console display, MIDI handler, control socket, preset code, the RtMidi library) is no longer
+  built. The parts that mattered are ported into the core: the value limits, the randomiser, played notes transposing NOTE-mode lanes,
+  the preset bank format. It remains in the git history (the 1.x releases).
 
 Licence: see the note in the top-level `README.md`.
