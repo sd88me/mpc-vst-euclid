@@ -7,8 +7,8 @@ Live III), with its own MPC screen skin and Q-Links. It makes no sound: it plays
 transport and tempo, so edits stay in phase with the beat. The sequencer is based on
 [intelliriffer/EUCLIDIER-CONSOLE](https://github.com/intelliriffer/EUCLIDIER-CONSOLE) by Amit Talwar (see [credits](#credits-and-licence)).
 
-<img width="320" height="200" alt="2026-10-03T124201676Z" src="https://github.com/user-attachments/assets/94c88fd0-436b-4d1a-8aa4-cb8a376adb89" />
-<img width="320" height="200" alt="2026-10-03T124157924Z" src="https://github.com/user-attachments/assets/708f8f74-1ec5-4dd7-bf24-7a0d2a1bbebe" />
+<img width="480" alt="Euclid, LANES tab" src="docs/img/euclid-lanes.png">
+<img width="480" alt="Euclid, ALL tab" src="docs/img/euclid-all.png">
 
 ## What it does
 
